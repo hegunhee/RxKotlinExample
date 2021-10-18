@@ -19,14 +19,4 @@ fun main(args: Array<String>) {
         println("Subscription 2 Received $it")
     })
     runBlocking { delay(1100) }
-
-    observable.subscribe({
-        println("Cold Observable Received $it")
-    }, {
-        println("Error ${it.message}")
-    }, {
-        println("onCompleted")
-    })
-
-    runBlocking { delay(1100) }
 }

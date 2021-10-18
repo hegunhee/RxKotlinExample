@@ -13,7 +13,7 @@ fun main(args : Array<String>){
         .observeOn(Schedulers.io())
         .subscribe{
             println(it)
-            runBlocking { delay(1000) }
+            runBlocking { delay(100) }
         }
     runBlocking { delay(700000) }
 }

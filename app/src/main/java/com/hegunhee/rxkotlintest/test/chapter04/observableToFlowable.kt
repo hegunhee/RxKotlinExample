@@ -15,7 +15,7 @@ fun main(args: Array<String>) {
             print("Rec. $it;\t")
             runBlocking { delay(1000) }
         }
-    runBlocking { delay(10000) }
+    runBlocking { delay(100000) }
 
 }
 
